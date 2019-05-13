@@ -1,0 +1,16 @@
+<div class="app">
+  <div class="title-container">
+    <h1>Game Of Life ! </h1>
+    <h3><i>{{projectType}} version</i></h3>
+  </div>
+
+  <app-controls (widthRequest)="onWidthMessage($event)"
+                (heightRequest)="onHeightMessage($event)"
+                (isPausedRequest)="onIsPausedMessage($event)"
+                (randomizeRequest)="onRandomizeMessage()">
+
+  </app-controls>
+
+  <app-grid-display [width]="width" [height]="height" [isPaused]="isPaused" [randomizeNotifier]="randomizeNotifier">
+  </app-grid-display>
+</div>

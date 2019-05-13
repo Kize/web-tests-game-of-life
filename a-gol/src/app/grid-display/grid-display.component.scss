@@ -1,0 +1,15 @@
+.row {
+  display: inline-block;
+}
+
+.cell {
+  padding: 2px;
+}
+
+.cell-alive {
+  background-color: #dddddd;
+}
+
+.cell-dead {
+  background-color: #333333;
+}

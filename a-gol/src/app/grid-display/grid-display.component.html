@@ -1,0 +1,8 @@
+<div *ngIf="displayedGrid">
+  <div class="row" *ngFor="let row of displayedGrid.cells; let cRow = index; trackBy: index">
+    <div *ngFor="let cell of row; let cCol = index; trackBy: index + cRow"
+         [ngClass]="{'cell': true, 'cell-alive': cell, 'cell-dead': !cell}"
+         (click)="onClickCell(cRow, cCol)">
+    </div>
+  </div>
+</div>

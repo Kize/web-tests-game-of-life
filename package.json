@@ -1,0 +1,16 @@
+{
+  "name": "svelte-app",
+  "version": "1.0.0",
+  "devDependencies": {
+    "jest": "24.8.0"
+  },
+  "scripts": {
+    "build": "rollup -c",
+    "autobuild": "rollup -c -w",
+    "dev": "run-p start:dev autobuild",
+    "start": "sirv public",
+    "test": "jest",
+    "start:dev": "sirv public --dev"
+  },
+  "dependencies": {}
+}
